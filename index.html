@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tech | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Future<span>Tech</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="robotics.html">Robotics</a></li>
+            <li><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li><a href="greentech.html">GreenTech</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="hero video-hero">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="AI_Bots_and_Futuristic_Cars_Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="hero-content animate-fade floating-3d">
+                <h1>Welcome to the <span class="highlight">Future</span></h1>
+                <p>Explore the technologies shaping our tomorrow. From AI to GreenTech, dive deep into the next generation of innovation.</p>
+            </div>
+        </header>
+
+        <section class="tech-section">
+            <h2 class="section-title">Explore Technologies</h2>
+            <div class="grid-container">
+                <div class="card" onclick="location.href='ai.html'">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Machines that think, learn, and evolve.</p>
+                    <span class="btn">Learn More</span>
+                </div>
+                <div class="card" onclick="location.href='robotics.html'">
+                    <h3>Robotics</h3>
+                    <p>Automating the physical world with precision.</p>
+                    <span class="btn">Learn More</span>
+                </div>
+                <div class="card" onclick="location.href='cybersecurity.html'">
+                    <h3>Cybersecurity</h3>
+                    <p>Protecting the digital frontier from threats.</p>
+                    <span class="btn">Learn More</span>
+                </div>
+                <div class="card" onclick="location.href='greentech.html'">
+                    <h3>GreenTech</h3>
+                    <p>Sustainable technology for a better planet.</p>
+                    <span class="btn">Learn More</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-container animate-fade">
+                
+                <div class="contact-info">
+                    <h3>Contact Details</h3>
+                    <p><strong>Developer:</strong> Aditya Negi</p>
+                    <p><strong>Contact:</strong> 9315978138</p>
+                    <p><strong>Email ID:</strong> negiaditya0004@gmail.com</p>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/negiaditya0004@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New Submission on Future Tech Portfolio!">
+                    
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="chatbot-container">
+        <button class="chat-toggle" id="chatToggle">💬</button>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">TechBot 🤖</div>
+            <div class="chat-body" id="chatBody">
+                <p class="bot-msg">Hi! How can I help you with Future Tech today?</p>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type a message...">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed by Aditya Negi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
