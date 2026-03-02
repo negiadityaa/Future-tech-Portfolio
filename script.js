@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('userInput');
     const chatBody = document.getElementById('chatBody');
 
-    const API_KEY = 'AIzaSyBIP23AkCncY8aiJMEpFC2FqskHbuTdeTs'; 
+    const API_KEY = 'AIzaSyCT6DgwYzpcfuJqC0CMHrf8dsLY0dpSPTk'; 
     
     // 🚀 FIXED: Upgraded to the new gemini-2.5-flash model
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
@@ -71,3 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
